@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="cabecalho">
+            <img src="/imagens/Foto 1.jpeg" alt="Foto Cabeçalho" class="fotoCabecalho">
+            <ul class="menu">
+                <a href="home.html" class="linkMenu">
+                    <li>Home</li>
+                </a>
+                <a href="curriculo.html" class="linkMenu">
+                    <li>Currículo</li>
+                </a>
+                <a href="servicos.html" class="linkMenu">
+                    <li>Serviços</li>
+                </a>
+                <a href="contato.html" class="linkMenu">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="body">
+            <h2 class="tituloForm">Contato: </h2>
+            <div class="corFundoForm">
+                <form class="formulario">
+                    <br>
+                    <p>
+                        <label for="nome">Nome Completo: </label>
+                        <input type="text" id="nome">
+                    </p>
+
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email">
+                    </p>
+
+                    <p>
+                        <label for="tel">Telefone: </label>
+                        <input type="tel" id="tel">
+                    </p>
+
+                    <p>
+                        <label for="fisica">Pessoa Física</label>
+                        <input type="radio" name="pessoa" id="fisica" class="pessoa">
+                        <label for="juridica">Pessoa Jurídica</label>
+                        <input type="radio" name="pessoa" id="juridica" class="pessoa">
+                    </p>
+
+                    <p>
+                        <label for="hora">Melhor hora para contato: </label>
+                        <input type="time" id="hora">
+                    </p>
+
+                    <p>
+                        <label for="assunto">Qual tipo de serviço deseja:</label>
+                        <select name="Assunto" id="assunto" class="formServico">
+                            <option value="assunto" selected disabled>Tipo de serviço</option>
+                            <option value="estatica">Página Estática</option>
+                            <option value="dinamica">Página Dinâmica</option>
+                            <option value="avancada">Página Super Avançada</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="txtMensagem">Escreva uma breve descrição do que deseja contratar:</label><br>
+                        <textarea name="Mensagem" id="txtMensagem" cols="30" rows="10" size="20px"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar" class="botao">
+                    </p>
+                    <br>
+                </form>
+            </div>
+            <h2 class="titContatoOutros">Outras formas de contato: </h2>
+            <ul class="contatoOutros">
+                <li>Residente em Vila Velha/ES</li>
+                <li><a href="https://mail.google.com/" class="link">marcelo.passamaim@gmail.com</a></li>
+                <li>(27) 99583-0853</li>
+                <li>Instagram: <a href="https://www.instagram.com/" class="link">@marcelo_pass</a></li>
+            </ul>
+        </div>
+
+        <audio controls autoplay="autoplay" muted>
+            <source src="/audio/Musica 1.mp3">
+        </audio>
+    </div>
+</body>
+
+</html>
